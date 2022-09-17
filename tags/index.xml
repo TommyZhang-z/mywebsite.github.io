@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on My new website</title>
+    <link>https://mywebsite.github.io.com/tags/</link>
+    <description>Recent content in Tags on My new website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 16 Sep 2022 14:54:08 +1000</lastBuildDate><atom:link href="https://mywebsite.github.io.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django</title>
+      <link>https://mywebsite.github.io.com/tags/django/</link>
+      <pubDate>Fri, 16 Sep 2022 14:54:08 +1000</pubDate>
+      
+      <guid>https://mywebsite.github.io.com/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NextJs</title>
+      <link>https://mywebsite.github.io.com/tags/nextjs/</link>
+      <pubDate>Fri, 16 Sep 2022 14:54:08 +1000</pubDate>
+      
+      <guid>https://mywebsite.github.io.com/tags/nextjs/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
