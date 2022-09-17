@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on My new website</title>
-    <link>https://mywebsite.github.io.com/blogs/</link>
+    <link>https://tommyzhang-z.github.io/mywebsite.github.io/blogs/</link>
     <description>Recent content in Blogs on My new website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Sep 2022 12:27:26 +1000</lastBuildDate><atom:link href="https://mywebsite.github.io.com/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Sep 2022 12:27:26 +1000</lastBuildDate><atom:link href="https://tommyzhang-z.github.io/mywebsite.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>COMP3121 Problem Set 1</title>
-      <link>https://mywebsite.github.io.com/blogs/comp3121-problem-set-1/</link>
+      <link>https://tommyzhang-z.github.io/mywebsite.github.io/blogs/comp3121-problem-set-1/</link>
       <pubDate>Sat, 17 Sep 2022 12:27:26 +1000</pubDate>
       
-      <guid>https://mywebsite.github.io.com/blogs/comp3121-problem-set-1/</guid>
+      <guid>https://tommyzhang-z.github.io/mywebsite.github.io/blogs/comp3121-problem-set-1/</guid>
       <description>SECTION 1: INTRODUCTORY PROBLEMS # Exercise 1 # Solving with brute force cost \(O(n^n)\) time.
 Which is not what we want&amp;hellip;
 \(S[1] = A[1] + A[2] + &amp;hellip; + A[n] \Rightarrow O(n)\)</description>

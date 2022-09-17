@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://mywebsite.github.io.com/sitemap.xml
+Sitemap: https://tommyzhang-z.github.io/mywebsite.github.io/sitemap.xml
