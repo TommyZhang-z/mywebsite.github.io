@@ -72,8 +72,8 @@
   
   
   <meta property="og:title" content="COMP3121 Problem Set 1" />
-<meta property="og:description" content="SECTION 1: INTRODUCTORY PROBLEMS # Exercise 1 # Solving with brute force cost \(O(n^n)\) time.
-Which is not what we want&hellip;
+<meta property="og:description" content="SECTION 1: INTRODUCTORY PROBLEMS # Exercise 1 # Solving with brute force cost \(O(n^2)\) time.
+Which is not what I want&hellip;
 \(S[1] = A[1] &#43; A[2] &#43; &hellip; &#43; A[n] \Rightarrow O(n)\)" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tommyzhang-z.github.io/mywebsite.github.io/blogs/comp3121-problem-set-1/" /><meta property="article:section" content="blogs" />
@@ -83,8 +83,8 @@ Which is not what we want&hellip;
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="COMP3121 Problem Set 1"/>
-<meta name="twitter:description" content="SECTION 1: INTRODUCTORY PROBLEMS # Exercise 1 # Solving with brute force cost \(O(n^n)\) time.
-Which is not what we want&hellip;
+<meta name="twitter:description" content="SECTION 1: INTRODUCTORY PROBLEMS # Exercise 1 # Solving with brute force cost \(O(n^2)\) time.
+Which is not what I want&hellip;
 \(S[1] = A[1] &#43; A[2] &#43; &hellip; &#43; A[n] \Rightarrow O(n)\)"/>
 
   
@@ -96,7 +96,7 @@ Which is not what we want&hellip;
     "name": "COMP3121 Problem Set 1",
     "headline": "COMP3121 Problem Set 1",
     
-    "abstract": "SECTION 1: INTRODUCTORY PROBLEMS # Exercise 1 # Solving with brute force cost \\(O(n^n)\\) time.\nWhich is not what we want\u0026hellip;\n\\(S[1] = A[1] \u002b A[2] \u002b \u0026hellip; \u002b A[n] \\Rightarrow O(n)\\)",
+    "abstract": "SECTION 1: INTRODUCTORY PROBLEMS # Exercise 1 # Solving with brute force cost \\(O(n^2)\\) time.\nWhich is not what I want\u0026hellip;\n\\(S[1] = A[1] \u002b A[2] \u002b \u0026hellip; \u002b A[n] \\Rightarrow O(n)\\)",
     "inLanguage": "en",
     "url" : "https:\/\/tommyzhang-z.github.io\/mywebsite.github.io\/blogs\/comp3121-problem-set-1\/",
     "author" : {
@@ -112,7 +112,7 @@ Which is not what we want&hellip;
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "462"
+    "wordCount": "887"
   }]
   </script>
 
@@ -596,7 +596,7 @@ Which is not what we want&hellip;
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2022-09-17 12:27:26 &#43;1000 AEST">September 17, 2022</time><span class="px-2 text-primary-500">&middot;</span><span>462 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span><span class="px-2 text-primary-500">&middot;</span><span id="views_blogs/COMP3121-Problem-Set-1.md" title="views">0 views</span><span class="px-2 text-primary-500">&middot;</span>
+      <time datetime="2022-09-17 12:27:26 &#43;1000 AEST">September 17, 2022</time><span class="px-2 text-primary-500">&middot;</span><span>887 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span><span class="px-2 text-primary-500">&middot;</span><span id="views_blogs\COMP3121-Problem-Set-1\index.md" title="views">0 views</span><span class="px-2 text-primary-500">&middot;</span>
 
 
   
@@ -606,7 +606,7 @@ Which is not what we want&hellip;
 
 <span class="mb-[2px]">
   <a
-    href="#/blogs/COMP3121-Problem-Set-1.md"
+    href="#/blogs/COMP3121-Problem-Set-1/index.md"
     class="text-lg hover:text-primary-500"
     rel="noopener noreferrer"
     target="_blank"
@@ -662,9 +662,21 @@ Which is not what we want&hellip;
             <li><a href="#b-1">(b)</a></li>
           </ul>
         </li>
+        <li><a href="#exercise-4">Exercise 4</a>
+          <ul>
+            <li><a href="#a-2">(a)</a></li>
+            <li><a href="#b-2">(b)</a></li>
+            <li><a href="#c">(c)</a></li>
+            <li><a href="#d">(d)</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><a href="#section-2-searching-algorithms">SECTION 2: SEARCHING ALGORITHMS</a></li>
+    <li><a href="#section-2-searching-algorithms">SECTION 2: SEARCHING ALGORITHMS</a>
+      <ul>
+        <li><a href="#exercise-8">Exercise 8</a></li>
+      </ul>
+    </li>
     <li><a href="#section-3-sorting-algorithms">SECTION 3: SORTING ALGORITHMS</a></li>
     <li><a href="#section-4-time-complexity-analysis">SECTION 4: TIME COMPLEXITY ANALYSIS</a></li>
   </ul>
@@ -681,12 +693,11 @@ Which is not what we want&hellip;
 
 <h2 id="section-1-introductory-problems" class="relative group">SECTION 1: INTRODUCTORY PROBLEMS <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#section-1-introductory-problems" aria-label="Anchor">#</a></span></h2>
 <h3 id="exercise-1" class="relative group">Exercise 1 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#exercise-1" aria-label="Anchor">#</a></span></h3>
-<p>Solving with brute force cost \(O(n^n)\) time.</p>
-<p>Which is not what we want&hellip;</p>
+<p>Solving with brute force cost \(O(n^2)\) time.</p>
+<p>Which is not what I want&hellip;</p>
 <p>\(S[1] = A[1] + A[2] + &hellip; + A[n] \Rightarrow O(n)\)</p>
 <p>\(S[2] = A[2] + A[3] + &hellip; + A[n+1] \Rightarrow O(n)\)</p>
 <p>\(S[n] = A[n] + A[n+1] + &hellip; + A[2n-1] \Rightarrow O(n)\)</p>
-<p><strong>Solution</strong></p>
 <blockquote>
 <p>Using the value from the preivious iteration would simplify the time complexity.<br>
 \(S[1] = A[1] + A[2] + &hellip; + A[n] \Rightarrow O(n)\)<br>
@@ -695,24 +706,21 @@ Which is not what we want&hellip;
 </blockquote>
 <h3 id="exercise-2" class="relative group">Exercise 2 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#exercise-2" aria-label="Anchor">#</a></span></h3>
 <h4 id="a" class="relative group">(a) <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#a" aria-label="Anchor">#</a></span></h4>
-<p><strong>Solution</strong><br>
-Create an array of size n with all zero, lets call it count.<br>
-Iterate through A, let c be the current element</p>
-<ul>
-<li>if count[c] equals 0 then set count[c] to 1</li>
-<li>else c is the duplicate, terminate the program</li>
-</ul>
+<pre>
+Create an array of size n with all zero, lets call it count.  
+Iterate through A, let c be the current element
+    if count[c] equals 0 then set count[c] to 1
+    else c is the duplicate!
+</pre>
 <h4 id="b" class="relative group">(b) <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#b" aria-label="Anchor">#</a></span></h4>
-<p><strong>Solution</strong></p>
 <blockquote>
 <p>let k be the duplicate number<br>
-\(\sum*{i=1}^{n}A[i] - \sum*{i=1}^{n-1}A[i] = k\)</p>
+\(\sum_{i=1}^{n}A[i] - \sum_{i=1}^{n-1}A[i] = k\)</p>
 </blockquote>
 <h3 id="exercise-3" class="relative group">Exercise 3 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#exercise-3" aria-label="Anchor">#</a></span></h3>
 <h4 id="a-1" class="relative group">(a) <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#a-1" aria-label="Anchor">#</a></span></h4>
-<p>To only determines if a number exist which can be written as a sum of two distinct numbers from A in two different ways, we can create an array which stores all possible sum from each distinc numbers.<br>
-After that, we run mergesort to the new array so that the duplicate numbers are next to each other, then it would be easy to find duplicate. If there are duplicates, that means there exists a number that satisfy the condition.</p>
-<p><strong>Solution</strong></p>
+<p>To only determines if a number exist which can be written as a sum of two distinct numbers from A in two different ways, I can create an array which stores all possible sum from each distinc numbers.<br>
+After that, I will run mergesort to the new array so that the duplicate numbers are next to each other, then it would be easy to find duplicate. If there are duplicates, that means there exists a number that satisfy the condition.</p>
 <pre>
 Create an Array named S
 Iterate for i: 1 to n:
@@ -730,8 +738,7 @@ iterate S = \(O(n^2)\)</p>
 = \(O(n^2) + O(n^2 log_2 n) + O(n^2)\)<br>
 = \(O(n^2 log_2 n)\)</p>
 <h4 id="b-1" class="relative group">(b) <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#b-1" aria-label="Anchor">#</a></span></h4>
-<p>By using a hash table instead of an array, we would know if duplicate exists before inserting to the hash table. (Note that on average hashtable lookups and insertion only takes O(1), so we can claim that the two operations has \(O(1)\) expected time).</p>
-<p><strong>Solution</strong></p>
+<p>By using a hash table instead of an array, I would know if duplicate exists before inserting to the hash table. (Note that on average hashtable lookups and insertion only takes O(1), so I can claim that the two operations has \(O(1)\) expected time).</p>
 <pre>
 Create an HashTable named S
 Iterate for i: 1 to n:
@@ -743,14 +750,109 @@ Iterate for i: 1 to n:
 insert to hash table = \(O(1)\)<br>
 lookups for hash table = \(O(1)\)</p>
 <p>insert and lookups are inside of the nested for loop, which makes the overall time complexity still being \(O(n^2)\)</p>
+<h3 id="exercise-4" class="relative group">Exercise 4 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#exercise-4" aria-label="Anchor">#</a></span></h3>
+<h4 id="a-2" class="relative group">(a) <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#a-2" aria-label="Anchor">#</a></span></h4>
+<table>
+<thead>
+<tr>
+<th>vote</th>
+<th>text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A-&gt;B</td>
+<td>A B</td>
+</tr>
+<tr>
+<td>B-&gt;C</td>
+<td>C B</td>
+</tr>
+<tr>
+<td>C-&gt;A</td>
+<td>C A</td>
+</tr>
+<tr>
+<td>D-&gt;A</td>
+<td>D A</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>From the example table, I can observe that a person&rsquo;s vote equals to the frequency of its name - 1.<br>
+\(F(x) = \text{frequncy of person x}\)<br>
+\(V(x) = \text{number of votes for person x}\)<br>
+\(V(x) = F(x) - 1\)</p>
+</blockquote>
+<h4 id="b-2" class="relative group">(b) <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#b-2" aria-label="Anchor">#</a></span></h4>
+<blockquote>
+<p>Using the solution from part (a), I can claim that the person with 0 votes has its name appearing once.<br>
+Let P be any person with 0 votes, the other name on the paper with P&rsquo;s name on it must be the person that P voted for.</p>
+</blockquote>
+<h4 id="c" class="relative group">(c) <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#c" aria-label="Anchor">#</a></span></h4>
+<p>let n be the number of students<br>
+let v be the number of total votes</p>
+<blockquote>
+<p>I can state that n = v since every student must and only vote once.</p>
+<p>Given the condition that every student received at least one vote, v = v - n, but since n = v, v - n would equals to zero. Therefore, there are no votes left for any one.</p>
+<p>In conclusion, from the given condition the maximum possible number of votes received by any sutdent is 1.</p>
+</blockquote>
+<h4 id="d" class="relative group">(d) <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#d" aria-label="Anchor">#</a></span></h4>
 <h2 id="section-2-searching-algorithms" class="relative group">SECTION 2: SEARCHING ALGORITHMS <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#section-2-searching-algorithms" aria-label="Anchor">#</a></span></h2>
+<h3 id="exercise-8" class="relative group">Exercise 8 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#exercise-8" aria-label="Anchor">#</a></span></h3>
+<p>Start from the top right or the bottom left corner of the matrix.</p>
+<p>
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex8_hucb8c05005d194cdd89884b638bcc538e_96847_330x0_resize_box_3.png 330w,
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex8_hucb8c05005d194cdd89884b638bcc538e_96847_660x0_resize_box_3.png 660w,
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex8_hucb8c05005d194cdd89884b638bcc538e_96847_1024x0_resize_box_3.png 1024w,
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex8_hucb8c05005d194cdd89884b638bcc538e_96847_1320x0_resize_box_3.png 2x"
+        src="/mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex8_hucb8c05005d194cdd89884b638bcc538e_96847_660x0_resize_box_3.png"
+        alt="Matrix Figure - Start at Top Right"
+      />
+      
+    </figure>
+  
+
+</p>
+<blockquote>
+<p>Looking at the grid, it follows a pattern where things on the left is always smaller than the current block, and the bottom is always greater than the current block.<br>
+Therefore, to find a number in the matrix, all we have to do is either go down or go left depends on if x is greater than the current block or less than the current block, then we would find if M contains x eventually. (In worst case: when it reaches the bottom left)</p>
+</blockquote>
+<pre>
+let i = 0, j = n, so we can start from the top right.
+let y be the current value of M(i, j)
+
+when x equals to y, 
+    then the number is found
+when x less than y, 
+    then we move to the next left column, in other words, j = j - 1
+when x is greater than y, 
+    then we move to the next row > below, which means, i = i + 1
+if i is greater than n or j is less than 0, 
+    then that represents the number was not in the matrix.
+repeat the operations above until it finds the number 
+    or the index get out of bounds.
+</pre>
+<p>The time complexity is O(n) since the worst case starting from top right is at the bottom left, which cost 2n.</p>
 <h2 id="section-3-sorting-algorithms" class="relative group">SECTION 3: SORTING ALGORITHMS <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#section-3-sorting-algorithms" aria-label="Anchor">#</a></span></h2>
 <h2 id="section-4-time-complexity-analysis" class="relative group">SECTION 4: TIME COMPLEXITY ANALYSIS <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#section-4-time-complexity-analysis" aria-label="Anchor">#</a></span></h2>
 
       </div>
       <script>
         if (typeof auth !== 'undefined') {
-          var oid = "views_blogs\/COMP3121-Problem-Set-1.md"
+          var oid = "views_blogs\\COMP3121-Problem-Set-1\\index.md"
           var id = oid ? oid.replaceAll("/", "-") : oid
 
           var viewed = localStorage.getItem(id);
