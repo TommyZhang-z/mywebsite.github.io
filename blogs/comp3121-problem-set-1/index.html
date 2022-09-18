@@ -112,7 +112,7 @@ Which is not what I want&hellip;
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "887"
+    "wordCount": "1125"
   }]
   </script>
 
@@ -596,7 +596,7 @@ Which is not what I want&hellip;
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2022-09-17 12:27:26 &#43;1000 AEST">September 17, 2022</time><span class="px-2 text-primary-500">&middot;</span><span>887 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span><span class="px-2 text-primary-500">&middot;</span><span id="views_blogs\COMP3121-Problem-Set-1\index.md" title="views">0 views</span><span class="px-2 text-primary-500">&middot;</span>
+      <time datetime="2022-09-17 12:27:26 &#43;1000 AEST">September 17, 2022</time><span class="px-2 text-primary-500">&middot;</span><span>1125 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span><span class="px-2 text-primary-500">&middot;</span><span id="views_blogs\COMP3121-Problem-Set-1\index.md" title="views">0 views</span><span class="px-2 text-primary-500">&middot;</span>
 
 
   
@@ -675,6 +675,8 @@ Which is not what I want&hellip;
     <li><a href="#section-2-searching-algorithms">SECTION 2: SEARCHING ALGORITHMS</a>
       <ul>
         <li><a href="#exercise-8">Exercise 8</a></li>
+        <li><a href="#exercise-9">Exercise 9</a></li>
+        <li><a href="#exercise-10">Exercise 10</a></li>
       </ul>
     </li>
     <li><a href="#section-3-sorting-algorithms">SECTION 3: SORTING ALGORITHMS</a></li>
@@ -785,18 +787,14 @@ lookups for hash table = \(O(1)\)</p>
 \(V(x) = F(x) - 1\)</p>
 </blockquote>
 <h4 id="b-2" class="relative group">(b) <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#b-2" aria-label="Anchor">#</a></span></h4>
-<blockquote>
 <p>Using the solution from part (a), I can claim that the person with 0 votes has its name appearing once.<br>
 Let P be any person with 0 votes, the other name on the paper with P&rsquo;s name on it must be the person that P voted for.</p>
-</blockquote>
 <h4 id="c" class="relative group">(c) <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#c" aria-label="Anchor">#</a></span></h4>
 <p>let n be the number of students<br>
 let v be the number of total votes</p>
-<blockquote>
 <p>I can state that n = v since every student must and only vote once.</p>
 <p>Given the condition that every student received at least one vote, v = v - n, but since n = v, v - n would equals to zero. Therefore, there are no votes left for any one.</p>
 <p>In conclusion, from the given condition the maximum possible number of votes received by any sutdent is 1.</p>
-</blockquote>
 <h4 id="d" class="relative group">(d) <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#d" aria-label="Anchor">#</a></span></h4>
 <h2 id="section-2-searching-algorithms" class="relative group">SECTION 2: SEARCHING ALGORITHMS <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#section-2-searching-algorithms" aria-label="Anchor">#</a></span></h2>
 <h3 id="exercise-8" class="relative group">Exercise 8 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#exercise-8" aria-label="Anchor">#</a></span></h3>
@@ -826,10 +824,8 @@ let v be the number of total votes</p>
   
 
 </p>
-<blockquote>
 <p>Looking at the grid, it follows a pattern where things on the left is always smaller than the current block, and the bottom is always greater than the current block.<br>
 Therefore, to find a number in the matrix, all we have to do is either go down or go left depends on if x is greater than the current block or less than the current block, then we would find if M contains x eventually. (In worst case: when it reaches the bottom left)</p>
-</blockquote>
 <pre>
 let i = 0, j = n, so we can start from the top right.
 let y be the current value of M(i, j)
@@ -846,6 +842,67 @@ repeat the operations above until it finds the number
     or the index get out of bounds.
 </pre>
 <p>The time complexity is O(n) since the worst case starting from top right is at the bottom left, which cost 2n.</p>
+<h3 id="exercise-9" class="relative group">Exercise 9 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#exercise-9" aria-label="Anchor">#</a></span></h3>
+<p>The key here is \(2^n\), since you can build a binary tree with \(2^n\) elements.<br>
+The solution is to form a binary to find the max number with \(2^n-1\) comparisons, keep track of all elements that have competed with the max number. There are n numbers that compete with the max number, so to find the second max number, it only costs \(n-1\) comparisons.<br>
+Which is a valid solution to compare \(2^n + n - 2\) times.</p>
+<p>
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex9_hua81d8a485cf3335452deb48a4e68e9d5_194299_330x0_resize_box_3.png 330w,
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex9_hua81d8a485cf3335452deb48a4e68e9d5_194299_660x0_resize_box_3.png 660w,
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex9_hua81d8a485cf3335452deb48a4e68e9d5_194299_1024x0_resize_box_3.png 1024w,
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex9_hua81d8a485cf3335452deb48a4e68e9d5_194299_1320x0_resize_box_3.png 2x"
+        src="/mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex9_hua81d8a485cf3335452deb48a4e68e9d5_194299_660x0_resize_box_3.png"
+        alt="Figure Tree"
+      />
+      
+    </figure>
+  
+
+</p>
+<h3 id="exercise-10" class="relative group">Exercise 10 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#exercise-10" aria-label="Anchor">#</a></span></h3>
+<p>Using similar logic from <a href="#exercise-9">Exercise 9</a> would not work since there could be an odd number of brances.</p>
+<p>Using two variable two store max and min and iterate through the list take \(2 * 2n\) comparisons, which exceeds than what the requetion requires.</p>
+<p>The solution is to separate them into pairs, then create two lists, one to store the smaller elements in each pairs, and the other list to store the larger elements in each pairs.</p>
+<p>
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        srcset="
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex10_huee8712927c1a8f5ac8b39aba9637d550_281861_330x0_resize_box_3.png 330w,
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex10_huee8712927c1a8f5ac8b39aba9637d550_281861_660x0_resize_box_3.png 660w,
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex10_huee8712927c1a8f5ac8b39aba9637d550_281861_1024x0_resize_box_3.png 1024w,
+          /mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex10_huee8712927c1a8f5ac8b39aba9637d550_281861_1320x0_resize_box_3.png 2x"
+        src="/mywebsite.github.io/blogs/comp3121-problem-set-1/images/COMP3121-Problem-Set-1-Ex10_huee8712927c1a8f5ac8b39aba9637d550_281861_660x0_resize_box_3.png"
+        alt="Figure Max and Min Solution"
+      />
+      
+    </figure>
+  
+
+</p>
+<p>Comparing each pair of elements takes \(n\) operation since there are \(2n\) elements so there are \(n\) pairs.
+After we split them into two lists (note that each list has a size of \(n\)), then we can find the smallest number from the first list with \(n - 1\) comparisons and same for the largest number from the other list.
+The sum of all comparison for this algorithm is \(3n - 2\) which is valid according to the specification.</p>
 <h2 id="section-3-sorting-algorithms" class="relative group">SECTION 3: SORTING ALGORITHMS <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#section-3-sorting-algorithms" aria-label="Anchor">#</a></span></h2>
 <h2 id="section-4-time-complexity-analysis" class="relative group">SECTION 4: TIME COMPLEXITY ANALYSIS <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#section-4-time-complexity-analysis" aria-label="Anchor">#</a></span></h2>
 
